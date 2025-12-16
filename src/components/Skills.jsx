@@ -5,7 +5,7 @@ const Skills = () => {
   const skills = {
     "Engineering & Design": ["MATLAB & Simulink", "SolidWorks", "Fusion 360", "AutoCAD", "EES (Engineering Equation Solver)"],
     "Renewable Energy Simulation": ["SAM (System Advisor Model)", "PvSyst", "Sunny Design", "ZetaCAD"],
-    "Programming & IT": ["Python (Zero to Advanced)", "Linux CLI", "VASP", "Microsoft 365"],
+    "Programming & IT": ["Python (Advanced)", "Linux CLI", "VASP", "Microsoft 365"],
     "Languages & Soft Skills": ["French (Native)", "English (C1)", "Turkish (C1)", "Team Spirit", "Autonomous"]
   };
 
