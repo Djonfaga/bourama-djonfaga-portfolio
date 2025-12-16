@@ -54,8 +54,11 @@ const Hero = () => {
             <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md overflow-hidden">
                 {/* Placeholder for Profile Image */}
                 <div className="aspect-w-1 aspect-h-1 bg-gray-200 relative flex items-center justify-center h-96">
-                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
-                   <span className="text-gray-400 font-medium text-lg">Profile Image Placeholder</span>
+                <img 
+                   src="/profile.jpg" 
+                   alt="Bourama Djonfaga Profile" 
+                   className="absolute inset-0 h-full w-full object-cover"
+                />
                    {/* In a real scenario, we'd use <img src="..." /> here */}
                 </div>
             </div>
