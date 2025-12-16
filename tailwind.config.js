@@ -7,13 +7,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0F766E', // Teal 700
-        secondary: '#0D9488', // Teal 600
-        dark: '#0F172A', // Slate 900
-        light: '#F1F5F9', // Slate 100
+        primary: '#10d7a8', // Codex Accent (Teal/Mint)
+        secondary: '#f5b841', // Codex Accent 2 (Gold/Yellow)
+        dark: '#050c18', // Codex BG
+        darker: '#0b1626', // Codex BG 2
+        card: 'rgba(255, 255, 255, 0.04)',
+        'card-hover': 'rgba(255, 255, 255, 0.08)',
+        muted: '#9bb1d1',
+        light: '#e6edf7', // Codex Text
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        display: ['Space Grotesk', 'sans-serif'],
+      },
+      backgroundImage: {
+        'mesh': "radial-gradient(at 20% 20%, rgba(16, 215, 168, 0.15), transparent 50%), radial-gradient(at 80% 10%, rgba(245, 184, 65, 0.12), transparent 45%), radial-gradient(at 60% 80%, rgba(60, 120, 255, 0.12), transparent 55%)",
       }
     },
   },

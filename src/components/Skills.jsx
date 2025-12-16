@@ -2,34 +2,49 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Skills = () => {
-  const skills = {
-    "Engineering & Design": ["MATLAB & Simulink", "SolidWorks", "Fusion 360", "AutoCAD", "EES (Engineering Equation Solver)"],
-    "Renewable Energy Simulation": ["SAM (System Advisor Model)", "PvSyst", "Sunny Design", "ZetaCAD"],
-    "Programming & IT": ["Python (Advanced)", "Linux CLI", "VASP", "Microsoft 365"],
-    "Languages & Soft Skills": ["French (Native)", "English (C1)", "Turkish (C1)", "Team Spirit", "Autonomous"]
-  };
+  const skillCategories = [
+    {
+      title: "Modeling & Analysis",
+      skills: ["MATLAB & Simulink", "SAM (System Advisor Model)", "EES", "VASP"]
+    },
+    {
+      title: "Design & CAD",
+      skills: ["SolidWorks", "Fusion 360", "AutoCAD", "ZetaCAD", "PvSyst", "Sunny Design"]
+    },
+    {
+      title: "Software & Mindset",
+      skills: ["Python (Advanced)", "Linux CLI", "Team Spirit", "Creativity", "Perseverance", "Autonomous"]
+    }
+  ];
 
   return (
-    <section id="skills" className="py-16 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">Technical Competencies</h2>
+    <section id="skills" className="py-20 bg-dark">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-12">
+          <p className="text-primary text-sm font-bold tracking-widest uppercase mb-2">Skills</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white font-display">
+            Tools, technologies, and strengths
+          </h2>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {Object.entries(skills).map(([category, items], index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {skillCategories.map((category, index) => (
             <motion.div 
-              key={category}
+              key={category.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-primary"
+              className="p-6 rounded-2xl bg-card border border-white/5 hover:border-primary/30 transition-all duration-300"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-4">{category}</h3>
+              <h3 className="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">
+                {category.title}
+              </h3>
               <div className="flex flex-wrap gap-2">
-                {items.map((skill) => (
+                {category.skills.map((skill) => (
                   <span 
                     key={skill} 
-                    className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-200"
+                    className="px-3 py-1.5 rounded-lg bg-white/5 text-muted text-sm border border-white/5 hover:text-white hover:bg-white/10 transition-colors"
                   >
                     {skill}
                   </span>

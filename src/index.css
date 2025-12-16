@@ -5,6 +5,30 @@ html {
 }
 
 body {
-  background-color: #F8FAFC; /* Slate 50 */
-  color: #1E293B; /* Slate 800 */
+  background-color: #050c18;
+  color: #e6edf7;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050c18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10d7a8;
 }

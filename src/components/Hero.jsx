@@ -1,67 +1,118 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, MapPin, Calendar, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="pt-24 pb-12 sm:pt-32 sm:pb-16 lg:pb-24 bg-gradient-to-br from-slate-50 to-slate-100 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+    <section className="pt-32 pb-16 min-h-screen flex items-center bg-mesh bg-fixed bg-no-repeat bg-cover">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-start">
           
+          {/* Left Content */}
           <motion.div 
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left"
+            className="lg:col-span-7 text-left"
           >
-            <div className="text-sm font-semibold uppercase tracking-wide text-primary">
-              Energy Systems Engineer
+            <div className="inline-block px-3 py-1 mb-6 border border-primary/30 rounded-full bg-primary/10 backdrop-blur-sm">
+              <span className="text-xs font-bold tracking-widest uppercase text-primary">Renewable Energy | Solar | Hydrogen</span>
             </div>
-            <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block">Bourama</span>
-              <span className="block text-primary">Djonfaga</span>
+            
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 font-display">
+              Bourama <br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-300">Djonfaga</span>
             </h1>
-            <p className="mt-6 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Specializing in renewable energy, solar, and hydrogen systems. 
-              Gazi University Graduate Student. Autonomous, multilingual, and committed to advancing the renewable energy sector.
+            
+            <p className="text-lg text-muted mb-8 max-w-xl leading-relaxed">
+              Energy Systems Engineer and Gazi University M.Sc. candidate focused on solar cell materials, 
+              grid-scale solar plants, and efficient HVAC solutions.
             </p>
-            <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary transition-colors md:py-4 md:text-lg md:px-10 shadow-lg hover:shadow-xl"
-                >
-                  Contact Me
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-                <a
-                  href="/resume.pdf" // Placeholder for actual resume path
-                  className="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors md:py-4 md:text-lg md:px-10"
-                >
-                  Download CV
-                  <Download className="ml-2 h-5 w-5" />
-                </a>
+            
+            <div className="flex flex-wrap gap-4 mb-12">
+              <a
+                href="#projects"
+                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-xl text-dark bg-primary hover:bg-emerald-400 transition-all shadow-[0_0_20px_rgba(16,215,168,0.3)] hover:shadow-[0_0_30px_rgba(16,215,168,0.5)] transform hover:-translate-y-1"
+              >
+                See my work
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <a
+                href="/resume.pdf" 
+                className="inline-flex items-center justify-center px-6 py-3 border border-white/10 text-base font-semibold rounded-xl text-white bg-white/5 hover:bg-white/10 transition-all backdrop-blur-sm"
+              >
+                Download CV
+                <Download className="ml-2 h-5 w-5" />
+              </a>
+            </div>
+
+            {/* Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 border-t border-white/10 pt-8">
+              <div className="p-4 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm">
+                <span className="block text-2xl font-bold text-white mb-1">4+ Years</span>
+                <span className="text-sm text-muted">Academic & project experience</span>
+              </div>
+              <div className="p-4 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm">
+                <span className="block text-2xl font-bold text-white mb-1">Hands-on</span>
+                <span className="text-sm text-muted">Solar Design & Install</span>
+              </div>
+              <div className="p-4 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm">
+                <span className="block text-2xl font-bold text-white mb-1">Multi-lingual</span>
+                <span className="text-sm text-muted">FR, EN, TR, BAM</span>
               </div>
             </div>
           </motion.div>
           
+          {/* Right Content - Profile & Focus Card */}
           <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
+            className="lg:col-span-5 mt-12 lg:mt-0 space-y-6"
           >
-            <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md overflow-hidden">
-                {/* Placeholder for Profile Image */}
-                <div className="aspect-w-1 aspect-h-1 bg-gray-200 relative flex items-center justify-center h-96">
-                <img 
-                   src="/profile.jpg" 
-                   alt="Bourama Djonfaga Profile" 
-                   className="absolute inset-0 h-full w-full object-cover"
-                />
-                   {/* In a real scenario, we'd use <img src="..." /> here */}
-                </div>
+            {/* Profile Image */}
+            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/3] group">
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent z-10"></div>
+              <img 
+                src="/profile.jpg" 
+                alt="Bourama Djonfaga" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute bottom-4 left-4 z-20">
+                <p className="text-white font-bold text-lg">Bourama Djonfaga</p>
+                <p className="text-primary text-sm">Energy Systems Engineer</p>
+              </div>
             </div>
+
+            {/* Current Focus Card */}
+            <div className="p-6 rounded-2xl bg-[#0b1626]/80 border border-white/10 backdrop-blur-md shadow-xl">
+               <div className="flex items-center gap-2 mb-3">
+                 <div className="h-2 w-2 rounded-full bg-secondary animate-pulse"></div>
+                 <span className="text-xs font-bold uppercase tracking-wider text-secondary">Current Focus</span>
+               </div>
+               <h3 className="text-xl font-bold text-white mb-2">Graduate Researcher</h3>
+               <p className="text-muted text-sm mb-4">
+                 Developing aluminum pastes for solar cells (TÜBİTAK 122M311) at NEU BİTAM.
+               </p>
+               <div className="flex flex-wrap gap-2 mb-4">
+                 {['Solar Materials', 'Process Optimization', 'R&D'].map(tag => (
+                   <span key={tag} className="px-2 py-1 text-xs rounded bg-white/5 text-muted border border-white/5">
+                     {tag}
+                   </span>
+                 ))}
+               </div>
+               <div className="space-y-2 pt-4 border-t border-white/5">
+                 <div className="flex items-center text-sm text-muted">
+                   <MapPin className="w-4 h-4 mr-2 text-primary" />
+                   Ankara, Turkiye
+                 </div>
+                 <div className="flex items-center text-sm text-muted">
+                   <CheckCircle className="w-4 h-4 mr-2 text-primary" />
+                   Open to energy & sustainability roles
+                 </div>
+               </div>
+            </div>
+
           </motion.div>
         </div>
       </div>
