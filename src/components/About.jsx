@@ -4,7 +4,7 @@ import { BookOpen, Award, Globe } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-darker">
+    <section id="about" className="py-20 bg-primary/5 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <p className="text-primary text-sm font-bold tracking-widest uppercase mb-2">About</p>

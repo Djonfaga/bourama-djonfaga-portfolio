@@ -10,7 +10,7 @@ export default {
         primary: '#10d7a8', // Codex Accent (Teal/Mint)
         secondary: '#f5b841', // Codex Accent 2 (Gold/Yellow)
         dark: '#050c18', // Codex BG
-        darker: '#0b1626', // Codex BG 2
+        darker: '#0a1f1c', // Greenish Dark
         card: 'rgba(255, 255, 255, 0.04)',
         'card-hover': 'rgba(255, 255, 255, 0.08)',
         muted: '#9bb1d1',
@@ -21,7 +21,7 @@ export default {
         display: ['Space Grotesk', 'sans-serif'],
       },
       backgroundImage: {
-        'mesh': "radial-gradient(at 20% 20%, rgba(16, 215, 168, 0.15), transparent 50%), radial-gradient(at 80% 10%, rgba(245, 184, 65, 0.12), transparent 45%), radial-gradient(at 60% 80%, rgba(60, 120, 255, 0.12), transparent 55%)",
+        'mesh': "radial-gradient(at 0% 0%, rgba(16, 215, 168, 0.15), transparent 50%), radial-gradient(at 100% 0%, rgba(255, 255, 255, 0.1), transparent 50%), radial-gradient(at 100% 100%, rgba(16, 215, 168, 0.1), transparent 50%), radial-gradient(at 0% 100%, rgba(255, 255, 255, 0.05), transparent 50%)",
       }
     },
   },

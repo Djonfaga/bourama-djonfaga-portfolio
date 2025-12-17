@@ -18,7 +18,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-dark">
+    <section id="skills" className="py-20 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <p className="text-primary text-sm font-bold tracking-widest uppercase mb-2">Skills</p>

@@ -4,7 +4,7 @@ import { ArrowRight, Download, MapPin, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-16 min-h-screen flex items-center bg-mesh bg-fixed bg-no-repeat bg-cover">
+    <section className="pt-32 pb-16 min-h-screen flex items-center">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
         <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-start">
           
@@ -58,7 +58,7 @@ const Hero = () => {
               </div>
               <div className="p-4 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm">
                 <span className="block text-2xl font-bold text-white mb-1">Multi-lingual</span>
-                <span className="text-sm text-muted">FR, EN, TR, BAM</span>
+                <span className="text-sm text-muted">French, English, Turkish, Bambara</span>
               </div>
             </div>
           </Motion.div>
