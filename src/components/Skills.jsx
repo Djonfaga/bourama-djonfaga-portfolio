@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 const Skills = () => {
   const skillCategories = [
@@ -29,7 +29,7 @@ const Skills = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <motion.div 
+            <Motion.div 
               key={category.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ const Skills = () => {
                   </span>
                 ))}
               </div>
-            </motion.div>
+            </Motion.div>
           ))}
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +10,7 @@ const Navbar = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Publications', href: '#publications' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -47,7 +48,7 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         {isOpen && (
-          <motion.div 
+          <Motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden mt-2 bg-[#091323] border border-white/10 rounded-2xl overflow-hidden shadow-xl"
@@ -64,7 +65,7 @@ const Navbar = () => {
                 </a>
               ))}
             </div>
-          </motion.div>
+          </Motion.div>
         )}
       </div>
     </nav>

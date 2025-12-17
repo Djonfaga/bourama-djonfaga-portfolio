@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import { Zap, Settings, Sun, Layers, PenTool, Truck } from 'lucide-react';
 
 const Projects = () => {
@@ -58,7 +58,7 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <motion.div
+            <Motion.div
               key={index}
               whileHover={{ y: -5 }}
               className="group rounded-2xl bg-card border border-white/5 overflow-hidden hover:border-primary/30 transition-all duration-300 flex flex-col"
@@ -82,7 +82,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </Motion.div>
           ))}
         </div>
       </div>

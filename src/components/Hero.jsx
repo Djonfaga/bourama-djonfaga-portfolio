@@ -1,6 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Download, MapPin, Calendar, CheckCircle } from 'lucide-react';
+import { motion as Motion } from 'framer-motion';
+import { ArrowRight, Download, MapPin, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-start">
           
           {/* Left Content */}
-          <motion.div 
+          <Motion.div 
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -61,10 +61,10 @@ const Hero = () => {
                 <span className="text-sm text-muted">FR, EN, TR, BAM</span>
               </div>
             </div>
-          </motion.div>
+          </Motion.div>
           
           {/* Right Content - Profile & Focus Card */}
-          <motion.div 
+          <Motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -113,7 +113,7 @@ const Hero = () => {
                </div>
             </div>
 
-          </motion.div>
+          </Motion.div>
         </div>
       </div>
     </section>

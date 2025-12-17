@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import { BookOpen, Award, Globe } from 'lucide-react';
 
 const About = () => {
@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <motion.div 
+          <Motion.div 
             whileHover={{ y: -5 }}
             className="p-8 rounded-2xl bg-card border border-white/5 hover:border-primary/30 transition-all duration-300"
           >
@@ -41,10 +41,10 @@ const About = () => {
                 <strong className="text-white">Scholarship:</strong> Turkiye Burslari (Full Ride)
               </li>
             </ul>
-          </motion.div>
+          </Motion.div>
 
           <div className="space-y-6">
-             <motion.div 
+             <Motion.div 
               whileHover={{ y: -5 }}
               className="p-8 rounded-2xl bg-card border border-white/5 hover:border-primary/30 transition-all duration-300"
             >
@@ -59,9 +59,9 @@ const About = () => {
                 <li>Material research for high-efficiency cells</li>
                 <li>Multidisciplinary teamwork (TEKNOFEST EV)</li>
               </ul>
-            </motion.div>
+            </Motion.div>
 
-            <motion.div 
+            <Motion.div 
               whileHover={{ y: -5 }}
               className="p-8 rounded-2xl bg-card border border-white/5 hover:border-primary/30 transition-all duration-300"
             >
@@ -75,7 +75,7 @@ const About = () => {
                 Multilingual professional fluent in French (Native), English (C1), Turkish (C1), and Bambara. 
                 Experienced in cross-cultural collaboration.
               </p>
-            </motion.div>
+            </Motion.div>
           </div>
         </div>
       </div>
