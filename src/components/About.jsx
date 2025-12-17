@@ -13,9 +13,9 @@ const About = () => {
           </h2>
           <p className="text-lg text-muted max-w-3xl leading-relaxed">
             Accomplished Energy Systems Engineer currently pursuing a funded M.Sc. at Gazi University (3.81/4) 
-            after graduating with honors from Necmettin Erbakan University. I blend lab research on solar cell 
-            materials with real-world solar PV and HVAC projects, bringing creative problem-solving and 
-            autonomous execution to every challenge.
+            after graduating with honors from Necmettin Erbakan University. I blend advanced computational research 
+            for hydrogen storage and production, and smart grid and microgrid design with real-world engineering projects, 
+            bringing creative problem-solving and autonomous execution to every challenge.
           </p>
         </div>
 
@@ -56,7 +56,8 @@ const About = () => {
               </div>
               <ul className="space-y-2 text-muted list-disc list-inside">
                 <li>Solar power plant design & commissioning</li>
-                <li>Material research for high-efficiency cells</li>
+                <li>Computational modeling for Hydrogen Storage & Production</li>
+                <li>Smart Grid & Microgrid Design</li>
                 <li>Multidisciplinary teamwork (TEKNOFEST EV)</li>
               </ul>
             </Motion.div>

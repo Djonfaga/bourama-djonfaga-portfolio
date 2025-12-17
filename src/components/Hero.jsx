@@ -21,12 +21,11 @@ const Hero = () => {
             
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-dark mb-6 font-display">
               Bourama <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-dark to-secondary">Djonfaga</span>
+              <span className="text-secondary">Djonfaga</span>
             </h1>
             
             <p className="text-lg text-muted mb-8 max-w-xl leading-relaxed">
-              Energy Systems Engineer and Gazi University M.Sc. candidate focused on solar cell materials, 
-              grid-scale solar plants, and efficient HVAC solutions.
+              Energy Systems Engineer and Gazi University M.Sc. candidate focused on computational science for hydrogen storage and production, and the design of smart grids and microgrids.
             </p>
             
             <div className="flex flex-wrap gap-4 mb-12">
@@ -90,12 +89,12 @@ const Hero = () => {
                  <div className="h-2 w-2 rounded-full bg-secondary animate-pulse"></div>
                  <span className="text-xs font-bold uppercase tracking-wider text-secondary">Current Focus</span>
                </div>
-               <h3 className="text-xl font-bold text-dark mb-2">Graduate Researcher</h3>
+               <h3 className="text-xl font-bold text-dark mb-2">Computational Researcher</h3>
                <p className="text-muted text-sm mb-4">
-                 Developing aluminum pastes for solar cells (TÜBİTAK 122M311) at NEU BİTAM.
+                 Specializing in computational science for hydrogen storage and production, and the design and optimization of smart grids and microgrids.
                </p>
                <div className="flex flex-wrap gap-2 mb-4">
-                 {['Solar Materials', 'Process Optimization', 'R&D'].map(tag => (
+                 {['Computational Science', 'Microgrids', 'Hydrogen', 'Smart Grid'].map(tag => (
                    <span key={tag} className="px-2 py-1 text-xs rounded bg-gray-100 text-muted border border-gray-200">
                      {tag}
                    </span>
