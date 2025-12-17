@@ -19,9 +19,9 @@ const Hero = () => {
               <span className="text-xs font-bold tracking-widest uppercase text-primary">Renewable Energy | Solar | Hydrogen</span>
             </div>
             
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 font-display">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-dark mb-6 font-display">
               Bourama <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-300">Djonfaga</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-dark to-secondary">Djonfaga</span>
             </h1>
             
             <p className="text-lg text-muted mb-8 max-w-xl leading-relaxed">
@@ -32,14 +32,14 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 mb-12">
               <a
                 href="#projects"
-                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-xl text-dark bg-primary hover:bg-emerald-400 transition-all shadow-[0_0_20px_rgba(16,215,168,0.3)] hover:shadow-[0_0_30px_rgba(16,215,168,0.5)] transform hover:-translate-y-1"
+                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-xl text-white bg-primary hover:bg-emerald-400 transition-all shadow-[0_0_20px_rgba(16,215,168,0.3)] hover:shadow-[0_0_30px_rgba(16,215,168,0.5)] transform hover:-translate-y-1"
               >
                 See my work
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a
                 href="/resume.pdf" 
-                className="inline-flex items-center justify-center px-6 py-3 border border-white/10 text-base font-semibold rounded-xl text-white bg-white/5 hover:bg-white/10 transition-all backdrop-blur-sm"
+                className="inline-flex items-center justify-center px-6 py-3 border border-gray-200 text-base font-semibold rounded-xl text-dark bg-white hover:bg-gray-50 transition-all backdrop-blur-sm shadow-sm"
               >
                 Download CV
                 <Download className="ml-2 h-5 w-5" />
@@ -47,17 +47,17 @@ const Hero = () => {
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 border-t border-white/10 pt-8">
-              <div className="p-4 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm">
-                <span className="block text-2xl font-bold text-white mb-1">4+ Years</span>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 border-t border-gray-200 pt-8">
+              <div className="p-4 rounded-xl bg-white/60 border border-primary/10 backdrop-blur-sm shadow-sm">
+                <span className="block text-2xl font-bold text-dark mb-1">4+ Years</span>
                 <span className="text-sm text-muted">Academic & project experience</span>
               </div>
-              <div className="p-4 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm">
-                <span className="block text-2xl font-bold text-white mb-1">Hands-on</span>
+              <div className="p-4 rounded-xl bg-white/60 border border-primary/10 backdrop-blur-sm shadow-sm">
+                <span className="block text-2xl font-bold text-dark mb-1">Hands-on</span>
                 <span className="text-sm text-muted">Solar Design & Install</span>
               </div>
-              <div className="p-4 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm">
-                <span className="block text-2xl font-bold text-white mb-1">Multi-lingual</span>
+              <div className="p-4 rounded-xl bg-white/60 border border-primary/10 backdrop-blur-sm shadow-sm">
+                <span className="block text-2xl font-bold text-dark mb-1">Multi-lingual</span>
                 <span className="text-sm text-muted">French, English, Turkish, Bambara</span>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Hero = () => {
             className="lg:col-span-5 mt-12 lg:mt-0 space-y-6"
           >
             {/* Profile Image */}
-            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/3] group">
+            <div className="relative rounded-2xl overflow-hidden border border-white/50 shadow-2xl shadow-primary/20 aspect-[4/3] group">
               <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent z-10"></div>
               <img 
                 src="/profile.jpg" 
@@ -85,23 +85,23 @@ const Hero = () => {
             </div>
 
             {/* Current Focus Card */}
-            <div className="p-6 rounded-2xl bg-[#0b1626]/80 border border-white/10 backdrop-blur-md shadow-xl">
+            <div className="p-6 rounded-2xl bg-white/80 border border-white/50 backdrop-blur-md shadow-xl shadow-gray-200/50">
                <div className="flex items-center gap-2 mb-3">
                  <div className="h-2 w-2 rounded-full bg-secondary animate-pulse"></div>
                  <span className="text-xs font-bold uppercase tracking-wider text-secondary">Current Focus</span>
                </div>
-               <h3 className="text-xl font-bold text-white mb-2">Graduate Researcher</h3>
+               <h3 className="text-xl font-bold text-dark mb-2">Graduate Researcher</h3>
                <p className="text-muted text-sm mb-4">
                  Developing aluminum pastes for solar cells (TÜBİTAK 122M311) at NEU BİTAM.
                </p>
                <div className="flex flex-wrap gap-2 mb-4">
                  {['Solar Materials', 'Process Optimization', 'R&D'].map(tag => (
-                   <span key={tag} className="px-2 py-1 text-xs rounded bg-white/5 text-muted border border-white/5">
+                   <span key={tag} className="px-2 py-1 text-xs rounded bg-gray-100 text-muted border border-gray-200">
                      {tag}
                    </span>
                  ))}
                </div>
-               <div className="space-y-2 pt-4 border-t border-white/5">
+               <div className="space-y-2 pt-4 border-t border-gray-100">
                  <div className="flex items-center text-sm text-muted">
                    <MapPin className="w-4 h-4 mr-2 text-primary" />
                    Ankara, Turkiye

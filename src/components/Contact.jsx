@@ -34,14 +34,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white/5 backdrop-blur-sm">
+    <section id="contact" className="py-20 bg-white/50 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
           
           {/* Info Side */}
           <div>
             <p className="text-primary text-sm font-bold tracking-widest uppercase mb-2">Contact</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white font-display mb-6">Let's work together</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-dark font-display mb-6">Let's work together</h2>
             <p className="text-muted text-lg mb-12">
               I'm currently available for new opportunities in renewable energy and engineering. 
               Whether you have a question or just want to say hi, I'll try my best to get back to you!
@@ -49,39 +49,39 @@ const Contact = () => {
 
             <div className="space-y-6">
               <a href="mailto:bdjonfaga@gmail.com" className="flex items-center group">
-                <div className="w-12 h-12 bg-card border border-white/10 rounded-xl flex items-center justify-center group-hover:border-primary/50 transition-colors">
+                <div className="w-12 h-12 bg-card border border-primary/20 rounded-xl flex items-center justify-center group-hover:border-primary/50 transition-colors shadow-sm">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <div className="ml-4">
                   <p className="text-sm font-medium text-muted">Email</p>
-                  <span className="text-white font-medium group-hover:text-primary transition-colors">bdjonfaga@gmail.com</span>
+                  <span className="text-dark font-medium group-hover:text-primary transition-colors">bdjonfaga@gmail.com</span>
                 </div>
               </a>
               
               <a href="tel:+905525487580" className="flex items-center group">
-                <div className="w-12 h-12 bg-card border border-white/10 rounded-xl flex items-center justify-center group-hover:border-primary/50 transition-colors">
+                <div className="w-12 h-12 bg-card border border-primary/20 rounded-xl flex items-center justify-center group-hover:border-primary/50 transition-colors shadow-sm">
                   <Phone className="h-5 w-5 text-primary" />
                 </div>
                 <div className="ml-4">
                   <p className="text-sm font-medium text-muted">Phone</p>
-                  <span className="text-white font-medium group-hover:text-primary transition-colors">+90 552 548 75 80</span>
+                  <span className="text-dark font-medium group-hover:text-primary transition-colors">+90 552 548 75 80</span>
                 </div>
               </a>
 
               <div className="flex items-center group">
-                <div className="w-12 h-12 bg-card border border-white/10 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-card border border-primary/20 rounded-xl flex items-center justify-center shadow-sm">
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
                 <div className="ml-4">
                   <p className="text-sm font-medium text-muted">Location</p>
-                  <span className="text-white font-medium">Ankara, Turkiye</span>
+                  <span className="text-dark font-medium">Ankara, Turkiye</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Form Side */}
-          <div className="bg-card border border-white/5 p-8 rounded-3xl backdrop-blur-sm">
+          <div className="bg-card border border-primary/20 shadow-xl shadow-gray-200/50 p-8 rounded-3xl backdrop-blur-sm">
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-muted mb-2">
@@ -92,7 +92,7 @@ const Contact = () => {
                   name="name"
                   id="name"
                   required
-                  className="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
+                  className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-dark placeholder-gray-400 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all shadow-sm"
                   placeholder="Your Name"
                 />
               </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   required
-                  className="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
+                  className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-dark placeholder-gray-400 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all shadow-sm"
                   placeholder="you@example.com"
                 />
               </div>
@@ -118,14 +118,14 @@ const Contact = () => {
                   name="message"
                   rows={4}
                   required
-                  className="w-full bg-dark border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
+                  className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-dark placeholder-gray-400 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all shadow-sm"
                   placeholder="How can I help you?"
                 />
               </div>
               <button
                 type="submit"
                 disabled={status === "sending" || status === "success"}
-                className={`w-full inline-flex justify-center items-center py-4 px-6 font-bold rounded-xl text-dark transition-all transform hover:-translate-y-1 ${
+                className={`w-full inline-flex justify-center items-center py-4 px-6 font-bold rounded-xl text-white transition-all transform hover:-translate-y-1 ${
                   status === "success" 
                     ? "bg-green-500 hover:bg-green-600" 
                     : "bg-primary hover:bg-emerald-400 shadow-[0_4px_20px_rgba(16,215,168,0.2)]"

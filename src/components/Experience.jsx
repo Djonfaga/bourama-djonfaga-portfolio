@@ -23,25 +23,25 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-white/5 backdrop-blur-sm">
+    <section id="experience" className="py-20 bg-white/50 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
            <p className="text-primary text-sm font-bold tracking-widest uppercase mb-2">Experience</p>
-           <h2 className="text-3xl md:text-4xl font-bold text-white font-display">Recent roles and impact</h2>
+           <h2 className="text-3xl md:text-4xl font-bold text-dark font-display">Recent roles and impact</h2>
         </div>
         
         <div className="space-y-6">
           {experiences.map((exp, index) => (
             <div 
               key={index} 
-              className="relative p-6 md:p-8 rounded-2xl bg-card border border-white/5 hover:bg-white/[0.02] transition-colors"
+              className="relative p-6 md:p-8 rounded-2xl bg-card border border-primary/20 shadow-lg shadow-gray-200/50 hover:border-secondary/50 transition-colors"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-bold text-white">{exp.role}</h3>
+                  <h3 className="text-xl font-bold text-dark">{exp.role}</h3>
                   <p className="text-primary font-medium">{exp.company}</p>
                 </div>
-                <div className="mt-2 md:mt-0 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-muted whitespace-nowrap">
+                <div className="mt-2 md:mt-0 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-sm text-secondary whitespace-nowrap">
                   {exp.date}
                 </div>
               </div>

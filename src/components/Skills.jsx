@@ -22,7 +22,7 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <p className="text-primary text-sm font-bold tracking-widest uppercase mb-2">Skills</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white font-display">
+          <h2 className="text-3xl md:text-4xl font-bold text-dark font-display">
             Tools, technologies, and strengths
           </h2>
         </div>
@@ -35,16 +35,16 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="p-6 rounded-2xl bg-card border border-white/5 hover:border-primary/30 transition-all duration-300"
+              className="p-6 rounded-2xl bg-card border border-primary/20 shadow-lg shadow-gray-200/50 hover:border-secondary/50 transition-all duration-300"
             >
-              <h3 className="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">
+              <h3 className="text-xl font-bold text-dark mb-6 border-b border-gray-100 pb-4">
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
                   <span 
                     key={skill} 
-                    className="px-3 py-1.5 rounded-lg bg-white/5 text-muted text-sm border border-white/5 hover:text-white hover:bg-white/10 transition-colors"
+                    className="px-3 py-1.5 rounded-lg bg-gray-100 text-muted text-sm border border-gray-200 hover:text-primary hover:bg-primary/5 hover:border-primary/30 transition-colors"
                   >
                     {skill}
                   </span>

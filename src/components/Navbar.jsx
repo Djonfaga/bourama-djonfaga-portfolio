@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full top-4 z-50 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-[#091323]/80 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl px-6 py-3 flex items-center justify-between">
+        <div className="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-2xl px-6 py-3 flex items-center justify-between">
           <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo(0,0)}>
             <span className="text-2xl font-bold font-display tracking-widest text-primary">BD</span>
           </div>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-muted hover:text-white hover:bg-white/5 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200"
+                  className="text-muted hover:text-dark hover:bg-gray-100 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200"
                 >
                   {link.name}
                 </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <Motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden mt-2 bg-[#091323] border border-white/10 rounded-2xl overflow-hidden shadow-xl"
+            className="md:hidden mt-2 bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-xl"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navLinks.map((link) => (

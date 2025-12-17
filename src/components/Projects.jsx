@@ -53,7 +53,7 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <p className="text-primary text-sm font-bold tracking-widest uppercase mb-2">Projects</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white font-display">Selected work</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-dark font-display">Selected work</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -61,22 +61,22 @@ const Projects = () => {
             <Motion.div
               key={index}
               whileHover={{ y: -5 }}
-              className="group rounded-2xl bg-card border border-white/5 overflow-hidden hover:border-primary/30 transition-all duration-300 flex flex-col"
+              className="group rounded-2xl bg-card border border-primary/20 shadow-lg shadow-gray-200/50 hover:border-secondary/50 transition-all duration-300 flex flex-col"
             >
               {/* Visual Placeholder Header */}
               <div className={`h-32 bg-gradient-to-br ${project.gradient} relative flex items-center justify-center`}>
-                <div className="p-4 bg-dark/50 backdrop-blur-md rounded-xl border border-white/10 group-hover:scale-110 transition-transform duration-300">
+                <div className="p-4 bg-white/30 backdrop-blur-md rounded-xl border border-white/20 group-hover:scale-110 transition-transform duration-300">
                   {project.icon}
                 </div>
               </div>
 
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
+                <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
                 <p className="text-muted text-sm mb-6 leading-relaxed flex-1">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tags.map((tag) => (
-                    <span key={tag} className="text-xs font-medium text-muted bg-white/5 border border-white/5 px-2 py-1 rounded">
+                    <span key={tag} className="text-xs font-medium text-muted bg-gray-100 border border-gray-200 px-2 py-1 rounded">
                       {tag}
                     </span>
                   ))}
